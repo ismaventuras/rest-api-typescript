@@ -1,0 +1,43 @@
+GET http://localhost:3000/api/todo
+
+###
+POST  http://localhost:3000/api/todo
+Content-Type: application/json
+
+{
+    "title": "todo test",
+    "content":"a test task"
+}
+
+###
+GET http://localhost:3000/api/todo/4
+###
+PUT http://localhost:3000/api/todo/4
+Content-Type: application/json
+
+{
+    "title": "todo test update",
+    "content":"a test task update"
+}
+
+###
+DELETE http://localhost:3000/api/todo/4
+
+###
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+    "username":"ismael",
+    "password":"SecretPassword"
+}
+
+###
+
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "username":"ismael",
+    "password":"SecretPassword"
+}
